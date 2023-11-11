@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantun</title>
+    <link rel="shortcut icon" href="../img/Quantun.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+   
+</head>
+<body>
+        <header>
+
+
+            <nav class="menu-lateral" id="menuLateral" >
+                <div class="btn-expandir">
+                    <i class="bi bi-arrows-expand-vertical" onclick="encolher()" ondblclick="expandir()" ></i>
+
+                </div>
+                <ul class="blocos-nav">
+                    <li class="item-menu">
+                        <a href="../../index.html">
+                            <span class="icones">
+                                <i class="bi bi-house"></i>
+                            </span>
+                            <span class="texto">Inicial</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="../html/quantico.html">
+                            <span class="icones">
+                                <i class="bi bi-globe-americas"></i>
+                            </span>
+                            <span class="texto"><pre>Mundo Quântico</pre></span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="../html/trabalhos.html">
+                            <span class="icones">
+                                <i class="bi bi-pc-display-horizontal"></i>
+                            </span>
+                            <span class="texto">Trabalhos</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="../html/sobre.html">
+                            <span class="icones">
+                                <i class="bi bi-file-person-fill"></i>
+                            </span>
+                            <span class="texto"><pre>Sobre Nós</pre></span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="../html/contato.html">
+                            <span class="icones">
+                                <i class="bi bi-envelope-paper"></i>
+                            </span>
+                            <span class="texto"><pre>Contato</pre></span>
+                        </a>
+                    </li>
+                    <li class="logoli">
+                        <div class="fundo-logo">
+                            <a href="../../index.html"><img class="logo" src="../img/Quantun__1_-removebg-preview.png" alt="logo"></a>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </nav>
+
+            <!--Acima esta a barra de navegação, não mexer acima-->
+
+            <section class="quadro">
+                <div id="conteiner">
+                <h1 id="titulo"><img src="../img/fisica.gif" alt="atomo" class="figura"> FALE CONOSCO <img src="../img/fisica.gif" alt="atomo" class="figura"> </h1> <br>
+              
+            <form method="post" class="formulario" action="mailto:nck.suporte.tec@gmail.com">
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome"><strong>Nome</strong></label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="sobrenome"><strong>Sobrenome</strong></label>
+                        <input type="text" name="sobrenome" id="sobrenome" required>
+                    </div>
+                </fieldset>
+                <fieldset class="grupo">
+                <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="text" name="email" id="email" required> <br>
+                </div>
+                <div class="campo">
+                    <label for="numero"><strong>(DDD) + Telefone</strong></label>
+                    <input type="tel" name="telefone" id="telefone" required>
+                </div>
+            </fieldset>
+                <div class="campo">
+                    <label for="escolha"><strong>Uso da automação</strong></label> <br>
+                    <label>
+                        <input type="radio" name="automacao" value="email">Pessoal<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="automacao" id="personalizado" checked>Profissional<br> 
+                    </label>
+            
+                </div>
+                <div class="campo">
+                    <label><strong>Faixa Etária</strong></label>
+                    <select name="" id="opcoes">
+                    <option value="" selected disabled>Selecione</option>
+                    <option value=""> Menor de 18 </option>
+                    <option value="">18 - 25 anos</option>
+                    <option value="">26 - 35 anos</option>
+                    <option value="">36 - 45 anos</option>
+                    <option value="">46 - 60 anos</option>
+                    <option value="">Maior que 60</option>
+                    </select>
+                </div>
+
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="selecionar"><strong>Selecione o/os programas</strong></label><br>
+                        <input type="checkbox">
+                        <label for="emailautomatico">Emails automáticos</label>
+                        <input type="checkbox">
+                        <label for="personalizado">Personalizado</label>
+                        
+                    </div>
+                </fieldset>
+
+                <div class="campo">
+                    <br>
+                    <label for="texto"><strong>Especifique o que o programa deverá fazer</strong></label>
+                    <br>
+                    <textarea name="area" id="codigo" cols="30" rows="6" style="width: 26em;" required></textarea>
+                </div>
+            
+                <button type="submit" class="botao">Enviar</button>
+                
+            </form>
+            </div>
+            </section>
+            
+    
+          <a href="https://www.instagram.com/quantun_tec/?next=%2Fquantun_ofc%2F" target="
+          "><img src="../img/instagram.png" class="instagram"></a>
+        </header>
+
+        <script src="../js/navegacao.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+@keyframes remelecho {
+0% {
+    rotate: 0deg;
+}
+50% {
+    rotate: -5deg;
+}
+75% {
+    rotate: 5deg;
+}
+100% {
+    rotate: 0deg;
+}
+}
+
+@keyframes aumentarFoto {
+
+    0% {
+        width: 0;
+        height: 0;
+    }
+
+    50% {
+        width: 500px;
+    }
+
+    100% {
+        height: 350px;
+
+    }
+
+}
+
+@keyframes digitacao {
+    0% {
+        width: 0;
+        border-right: 4px solid white;
+    }
+
+    99% {
+        border-right: 4px solid white;
+    }
+
+    100% {
+        border-right: 0px solid white;
+    }
+    
+    
+}
+
+@keyframes piscar {
+    50% {
+        border-color:transparent;
+    }
+}
+
+@keyframes pulo {
+    10% {
+        transition: transform .5s;
+        transform: scale(1.05);
+        letter-spacing: 1px;
+        
+    }
+
+}
+
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    
+
+    
+}
+
+.cabecalho {
+    background-color: rgb(34, 34, 34);
+    height: 120px;
+    min-width: 100%;
+}
+
+.logo-index {
+    position: relative;
+    float: right;
+    width: 150px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    transition: transform .8s, filter .8s;
+}
+
+.logo-index:hover {
+    animation: remelecho .5s linear;
+    transform: scale(1.1);
+    filter: drop-shadow(1px 1px 10px white);
+}
+
+
+.titulo-cabecalho {
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    left: 100px;
+    width: 40ch;
+    top: 35%;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 40px;
+    animation: digitacao 2s, piscando 1s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+@media (max-width: 1000px) {
+    .titulo-cabecalho {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .titulo-cabecalho {
+        font-size: 9px;
+    }
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.janela {
+   
+   position: relative;
+   top: 10%;
+   left: 150px;
+   float: left;
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    border: 3px solid white;
+    overflow: hidden;
+    transition: backdrop-filter 1s;
+    border-radius: 10px;
+    
+
+
+}
+
+.janela:hover {
+    
+    backdrop-filter: blur(10px);
+}
+
+
+.text {
+    text-align: justify;
+    color: white;
+    text-shadow: 0 0 5px black;
+    position: relative;
+    top: 200px;
+    transition: top .5s;
+
+}
+.text h3 {
+    padding-top: 2px;
+}
+.text p {
+    padding-top: 10px;
+    font-size: 14pt;
+}
+.janela:hover .text {
+    top: 0;
+
+}
+
+
+
+.bemvindo {
+    position: absolute;
+    left: 13%;
+    top: 40%;
+    color: white;
+    transition: filter 1s;
+   text-shadow: 0 0 5px black;
+
+}
+
+.janela:hover .bemvindo {
+    filter: blur(20px);
+}
+
+.nos {
+    position: relative;
+    left: 100px;
+    min-width: 100px;
+    height: 339px;
+    width: 600px;
+    float: right;
+    top: 5em;
+    border: 3px solid white;
+    border-radius: 10px;
+    animation: aumentarFoto 1s linear ;
+    overflow:hidden;
+
+    
+   
+}
+
+.videoAutomac {
+    width: 100%;
+}
+
+.animacaoInicial {
+    position: relative;
+    width: 650px;
+    height: 180px;
+    top: 44%;
+    left: 100px;
+}
+
+
+
+.animacaoInicial img {
+    position: relative;
+
+    border-radius: 100%;
+    padding: 10px;
+    background-color: white;
+    width: 150px;
+    bottom: 185px;
+    right: -228%;
+    cursor:pointer;
+    transition: all .5s;
+}
+
+.animacaoInicial img:hover {
+    rotate: .5deg;
+   
+}
+
+.animacaoInicial div {
+    opacity: 0;
+    position: relative;
+    float: right;
+    width: 400px;
+    height: 150px;
+    bottom: 185px;
+    right: 10px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+
+.animacaoInicial div h3 {
+    position: relative;
+    font-weight: 100;
+    left: 5px;
+    top: 28px;
+    text-align: justify;
+    padding: 5px 20px;
+
+}
+
+@media (max-height:650px) {
+   
+
+    
+}
